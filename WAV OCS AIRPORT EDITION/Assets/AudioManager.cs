@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip level12345678;
     public AudioClip pa1;
 
+    private void Start()
     {
         musicSource.clip = level12345678;
         musicSource.Play();
