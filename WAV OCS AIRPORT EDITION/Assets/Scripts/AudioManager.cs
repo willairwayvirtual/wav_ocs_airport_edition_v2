@@ -10,12 +10,12 @@ public class AudioManager : MonoBehaviour
 
     [Header("------ Audio Clip ------")]
 
-    public AudioClip level12345678;
-    public AudioClip pa1;
+    public AudioClip airport;
+    public AudioClip bingbong;
 
     private void Start()
     {
-        musicSource.clip = level12345678;
+        musicSource.clip = airport ;
         musicSource.Play();
     }
 }
