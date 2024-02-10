@@ -43,7 +43,11 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 2db727478417cfd4d8a421bca4929ebd
+    name: AirportNoise
+  - guid: d521c59d772d7a941a95f358c1f06a74
+    name: BingBong
   m_AudioMixerGroupViews:
   - guids:
     - 67241746401921a40a36854fd4ad97f8
