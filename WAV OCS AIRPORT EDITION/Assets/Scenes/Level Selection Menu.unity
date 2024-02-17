@@ -1103,7 +1103,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 664148527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df891de849ac4b340930751cc637adad, type: 3}
+  m_Script: {fileID: 11500000, guid: e74e1fd0dbb4ade419cb25bdd93a1c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &706985000
@@ -1190,8 +1190,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: levelmenu, Assembly-CSharp
+      - m_Target: {fileID: 664148531}
+        m_TargetAssemblyTypeName: levmun, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -2777,9 +2777,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: levelmenu, Assembly-CSharp
-        m_MethodName: restart21
+      - m_Target: {fileID: 664148531}
+        m_TargetAssemblyTypeName: levmun, Assembly-CSharp
+        m_MethodName: back2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
