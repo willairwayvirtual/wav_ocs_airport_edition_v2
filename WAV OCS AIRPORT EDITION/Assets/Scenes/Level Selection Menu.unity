@@ -670,7 +670,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: main menu
+  m_Text: '
+
+    controller menu'
 --- !u!222 &247307992
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1855,7 +1857,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: controller menu
+  m_Text: main menu
 --- !u!222 &1477980908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2145,9 +2147,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: levelmenu, Assembly-CSharp
-        m_MethodName: restart1
+      - m_Target: {fileID: 664148531}
+        m_TargetAssemblyTypeName: levmun, Assembly-CSharp
+        m_MethodName: back
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2730,7 +2732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 270, y: -137}
+  m_AnchoredPosition: {x: 270, y: -134}
   m_SizeDelta: {x: 240.2, y: 78.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837186777

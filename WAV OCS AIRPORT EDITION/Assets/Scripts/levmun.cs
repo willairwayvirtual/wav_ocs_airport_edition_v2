@@ -21,7 +21,7 @@ public class levmun : MonoBehaviour
     }
     public void back2()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
 
     }
 
