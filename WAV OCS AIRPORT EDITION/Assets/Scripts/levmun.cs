@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 public class levmun : MonoBehaviour
 {
 
+    public LevelObject[] levelObjects;
+    public static int currLevel;
+    public static int UnlockedLevels;
+
     public void OnclickLevel(int levelNum)
     {
         SceneManager.LoadScene("Gamescene");
@@ -13,7 +17,19 @@ public class levmun : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
-    // Start is called before the first
+    // Start is called before the first frame update
+    void Start()
+    {
+        UnlockedLevels = PlayerPrefs.GetInt("UnlockedLevels", 0);
+
+        for (int i = 0; 1 < levelObjects.Length; i++)
+        {
+            if (UnlockedLevels >= i)
+            {
+                levelObjects[i].levelButton.interactable = true;
+            }
+        }
+    }
     public void back()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
