@@ -11,6 +11,7 @@ public class levmun : MonoBehaviour
 
     public void OnclickLevel(int levelNum)
     {
+        currLevel = levelNum;
         SceneManager.LoadScene("Gamescene");
     }
     public void OnClickBack()
