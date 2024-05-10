@@ -52,6 +52,8 @@ public class MovingPlatform : MonoBehaviour
 
         float distanceToWaypoint = Vector3.Distance(_previousWaypoint.position, _targetWaypoint.position);
         _timeToWaypoint = distanceToWaypoint / _Speed;
+        StartCoroutine(WaitNextPoint());
+
 
     }
 
