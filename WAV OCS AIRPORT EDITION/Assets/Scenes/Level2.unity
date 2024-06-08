@@ -813,7 +813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waypointPath: {fileID: 1066054283}
   _Speed: 2
-  waitDuration: 0
+  waitDuration: 1
 --- !u!1001 &413093407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4462,7 +4462,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "dev  15mim \nyou are on  level2\n"
+  m_Text: 'dev  1800
+
+    you are on  level2
+
+'
 --- !u!222 &1860248720
 CanvasRenderer:
   m_ObjectHideFlags: 0
