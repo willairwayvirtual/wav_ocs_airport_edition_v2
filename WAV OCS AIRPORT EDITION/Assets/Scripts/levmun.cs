@@ -2,41 +2,59 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class levmun : MonoBehaviour
+using UnityEngine.UI;
+
+public class Levmun : MonoBehaviour
 {
-
-    public LevelObject[] levelObjects;
-    public static int currLevel;
-    public static int UnlockedLevels;
-
-    public void OnclickLevel(int levelNum)
+   
+    public Button[] buttons;
+    public GameObject levelButtons;
+    
+    private void Awake()
     {
-        currLevel = levelNum;
-        SceneManager.LoadScene("Gamescene");
+        ButtonsToArray();
+        
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].interactable = false;
+        }
+        for(int i = 0; i < unlockedLevel; i++)
+        {
+            buttons[i].interactable = true;
+        }
     }
+
+   public void OpenLevel (int LevelId)
+    {
+        string levelName = "Level" + LevelId;
+        SceneManager.LoadScene(levelName);
+    }
+   
+    void ButtonsToArray()
+    {
+        int childCount = levelButtons.transform.childCount;
+        buttons = new Button[childCount];
+        for (int i = 0; i <childCount; i++)
+        {
+            buttons[i] = levelButtons.transform.GetChild(i).gameObject.GetComponent<Button>();
+        }
+    }
+    
+    
+        
     public void OnClickBack()
     {
         this.gameObject.SetActive(false);
     }
     // Start is called before the first frame update
-    void Start()
-    {
-        UnlockedLevels = PlayerPrefs.GetInt("UnlockedLevels", 0);
-
-        for (int i = 0; 1 < levelObjects.Length; i++)
-        {
-            if (UnlockedLevels >= i)
-            {
-                levelObjects[i].levelButton.interactable = true;
-            }
-        }
-    }
-    public void back()
+    
+    public void Controller()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
 
     }
-    public void back2()
+    public void Main()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
 
@@ -47,7 +65,11 @@ public class levmun : MonoBehaviour
         Debug.Log("quit?");
         Application.Quit();
     }
-
+    public void Resetprefs()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("Start Menu");
+    }
 
 
 }

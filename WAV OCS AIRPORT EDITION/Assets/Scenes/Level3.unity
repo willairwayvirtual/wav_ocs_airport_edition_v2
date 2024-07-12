@@ -3615,7 +3615,6 @@ GameObject:
   - component: {fileID: 1554937827}
   - component: {fileID: 1554937828}
   - component: {fileID: 1554937829}
-  - component: {fileID: 1554937832}
   - component: {fileID: 1554937831}
   - component: {fileID: 1554937833}
   m_Layer: 0
@@ -3782,20 +3781,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1554937826}
   offset: {x: 0, y: 0, z: 0}
---- !u!114 &1554937832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554937822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e8aa33a540f897409d36441343deddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1554937826}
-  scoreText: {fileID: 0}
 --- !u!114 &1554937833
 MonoBehaviour:
   m_ObjectHideFlags: 0
