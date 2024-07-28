@@ -3837,8 +3837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waypointPath: {fileID: 1166276749}
-  _Speed: 3.5
-  waitDuration: 0
+  _Speed: 4
+  waitDuration: 4
 --- !u!1 &1464151289
 GameObject:
   m_ObjectHideFlags: 0
@@ -5556,8 +5556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waypointPath: {fileID: 1066054283}
-  _Speed: 3
-  waitDuration: 3
+  _Speed: 4
+  waitDuration: 4
 --- !u!1001 &2138219898
 PrefabInstance:
   m_ObjectHideFlags: 0
