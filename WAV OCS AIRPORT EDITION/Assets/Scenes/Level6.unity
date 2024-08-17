@@ -911,7 +911,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Go to all  level '
+  m_Text: All Levels Menu
 --- !u!222 &377827543
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5131,7 +5131,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 45.001, y: 88.5898}
+  m_AnchoredPosition: {x: -270, y: 129}
   m_SizeDelta: {x: 312.43, y: 88.7738}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1860248719
@@ -5167,7 +5167,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "dev  1HR10MIM \nyou are on  level 5\n"
+  m_Text: "dev  1 Hr 10 mins \nyou are on  level 6\n"
 --- !u!222 &1860248720
 CanvasRenderer:
   m_ObjectHideFlags: 0
