@@ -1825,13 +1825,14 @@ GameObject:
   - component: {fileID: 787799765}
   - component: {fileID: 787799764}
   - component: {fileID: 787799763}
+  - component: {fileID: 787799766}
   m_Layer: 5
   m_Name: Pause Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &787799762
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1849,7 +1850,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 360, y: -146}
+  m_AnchoredPosition: {x: 423, y: -164}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &787799763
@@ -1895,7 +1896,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 787799764}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 787799766}
+        m_TargetAssemblyTypeName: Open_Panel, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &787799764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1934,6 +1947,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787799761}
   m_CullTransparentMesh: 1
+--- !u!114 &787799766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787799761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f143b910f90be442a37e4a096a63a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pause_panel: {fileID: 461611696}
 --- !u!1 &794710835
 GameObject:
   m_ObjectHideFlags: 0
@@ -3572,21 +3598,6 @@ MonoBehaviour:
   _waypointPath: {fileID: 1038519341}
   _Speed: 1
   waitDuration: 0
---- !u!114 &1341193850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341193848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 518d1003765c8e648a71446a2c4a93bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _waypointPath: {fileID: 0}
-  _Speed: 0
-  waitDuration: 0
 --- !u!1 &1357780755
 GameObject:
   m_ObjectHideFlags: 0
@@ -4126,7 +4137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1554937828}
   forwardForce: 2000
-  speed: 0
+  speed: 7
   sidewaysForce: 500
   moveJoystick: {fileID: 136251880}
 --- !u!54 &1554937828
@@ -4195,8 +4206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8aa33a540f897409d36441343deddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1554937826}
-  scoreText: {fileID: 0}
 --- !u!114 &1554937833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5647,9 +5656,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5514432056615486092, guid: 179aa15669fc7204586e1040fd75137d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1341193850}
-    - targetCorrespondingSourceObject: {fileID: 5514432056615486092, guid: 179aa15669fc7204586e1040fd75137d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1341193849}
   m_SourcePrefab: {fileID: 100100000, guid: 179aa15669fc7204586e1040fd75137d, type: 3}
 --- !u!1 &2133818525 stripped
@@ -5758,11 +5764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 92
+      value: 239
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 86
+      value: 142
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5782,7 +5788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchorMax.x

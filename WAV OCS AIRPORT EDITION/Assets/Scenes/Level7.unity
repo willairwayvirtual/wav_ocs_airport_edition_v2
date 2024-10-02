@@ -577,7 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6dbf2a6df373c444906d4e8e06c5ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waypointPath: {fileID: 0}
+  _waypointPath: {fileID: 1554871023}
   _Speed: 3
   waitDuration: 0
 --- !u!1001 &169866282
@@ -1245,6 +1245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 470140176}
+  - component: {fileID: 470140177}
   m_Layer: 0
   m_Name: WaypointPath6
   m_TagString: Untagged
@@ -1269,6 +1270,18 @@ Transform:
   - {fileID: 1309971576}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470140177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470140175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a6201496c38134a92e14cf18ecfb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &492438922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2043,7 +2056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &787799762
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3827,7 +3840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518d1003765c8e648a71446a2c4a93bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waypointPath: {fileID: 0}
+  _waypointPath: {fileID: 1038519341}
   _Speed: 0
   waitDuration: 0
 --- !u!1 &1357780755
@@ -4315,6 +4328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1554871022}
+  - component: {fileID: 1554871023}
   m_Layer: 0
   m_Name: WaypointPath7
   m_TagString: Untagged
@@ -4339,6 +4353,18 @@ Transform:
   - {fileID: 1493723136}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1554871023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554871021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ac089a7acb8764db30b63919093e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1554937822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4464,7 +4490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1554937828}
   forwardForce: 2000
-  speed: 0
+  speed: 7
   sidewaysForce: 500
   moveJoystick: {fileID: 136251880}
 --- !u!54 &1554937828
@@ -4533,8 +4559,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8aa33a540f897409d36441343deddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1554937826}
-  scoreText: {fileID: 0}
 --- !u!114 &1554937833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6003,7 +6027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9441ea250a5d9be4c929a5efdfe83a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waypointPath: {fileID: 0}
+  _waypointPath: {fileID: 470140177}
   _Speed: 2
   waitDuration: 0
 --- !u!1 &2133818525 stripped
@@ -6112,11 +6136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 92
+      value: 199
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 86
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6136,7 +6160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchorMax.x
