@@ -39,8 +39,9 @@ public class PauseMenu : MonoBehaviour
     }
     public void Quit()
     {
-        Debug.Log("quit?");
-        Application.Quit();
+        {
+            SceneManager.LoadScene("START MENU");
+        }
     }
     public void all_decks()
     {
