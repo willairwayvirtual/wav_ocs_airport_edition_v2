@@ -14,7 +14,7 @@ public class LevelComplete9 : MonoBehaviour
     public void Quit()
     {
         UnlockNewLevel();
-        SceneManager.LoadScene("START MENU");
+        SceneManager.LoadScene("LevelSelectionMenu");
 
     }
 

@@ -27,7 +27,7 @@ public class LevelComplete1 : MonoBehaviour
     {
         {
             UnlockNewLevel();
-            SceneManager.LoadScene("START MENU");
+            SceneManager.LoadScene("LevelSelectionMenu");
 
         }
 
